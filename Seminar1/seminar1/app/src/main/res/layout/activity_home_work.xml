@@ -8,7 +8,8 @@
         tools:context=".HomeWorkActivity"
         android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
+
             android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,13 +20,166 @@
                 android:layout_height="wrap_content"
                 android:text="더보기"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textStyle="bold"/>
 
-        <ImageView android:layout_width="25dp" android:layout_height="25dp"
-        android:src="@drawable/search"/>
+        <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/search_btn"
+                android:layout_toLeftOf="@+id/setting_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search"
+                android:layout_gravity=""/>
+
+
+        <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/setting_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/settings"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+    >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/soccer"/>
+
+        <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이승우"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jhsw0375@gmail.com"
+
+                    android:textSize="15dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:background="@android:color/darker_gray">
+
+        <TextView
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:text="pay : 39,990원"/>
+
+        <View
+                android:layout_width="1dp"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center_vertical"
+
+                android:layout_height="20dp"/>
+
+        <TextView
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="송금"/>
+
+
+        <View
+                android:layout_width="1dp"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="20dp"/>
+        <TextView
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="결제"/>
 
 
     </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+
+        <ImageView android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/gift"/>
+        <ImageView android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/hair"/>
+        <ImageView android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/make_up"/>
+        <ImageView android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/happiness"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+    android:background="@drawable/background_border">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOPT 1차 과제"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+
+    </RelativeLayout>
 
 </LinearLayout>
