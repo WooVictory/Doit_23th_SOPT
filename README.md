@@ -5,3 +5,11 @@
 * 23기 DoIT SOPT android 파트를 들으면서 공부한 내용 혹은 과제를 업로드하는 공간입니다.
 * Site : [http://sopt.org/wp/](http://sopt.org/wp/)
 * Facebook : [https://www.facebook.com/clubsopt/](https://www.facebook.com/clubsopt/)
+
+* 1차 세미나
+    * View / Layout과 친해지기
+    * 
+
+* 2차 세미나
+    * Activity / Fragment에 대해서
+    * 
