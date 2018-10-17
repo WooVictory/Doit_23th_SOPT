@@ -7,9 +7,10 @@
 * Facebook : [https://www.facebook.com/clubsopt/](https://www.facebook.com/clubsopt/)
 
 * 1차 세미나
-    * View / Layout과 친해지기
-    * 
+    * 프로젝트 분석
+    * View 컴포넌트
+    * Kotlin 맛보기 + Library
 
 * 2차 세미나
     * Activity / Fragment에 대해서
-    * 
+    * 4대 컴포넌트와 Intent
