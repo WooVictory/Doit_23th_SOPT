@@ -1,4 +1,4 @@
-package woo.sopt23.seminar2_23th
+package woo.sopt23.seminar2_23th.HomeWork
 
 import android.app.Activity
 import android.content.Context
@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivityForResult
 import org.jetbrains.anko.toast
+import woo.sopt23.seminar2_23th.R
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {

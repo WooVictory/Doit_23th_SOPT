@@ -27,8 +27,8 @@ class SplashActivity : AppCompatActivity() {
 
         handler.postDelayed({
             // Anko 라이브러리 사용
-            startActivity<LoginActivity>("message" to "success")
-        },3500)
+            startActivity<MainActivity>("message" to "success")
+        },4000)
 
     }
 }

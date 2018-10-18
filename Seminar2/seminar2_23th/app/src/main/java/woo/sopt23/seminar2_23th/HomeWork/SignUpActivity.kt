@@ -1,4 +1,4 @@
-package woo.sopt23.seminar2_23th
+package woo.sopt23.seminar2_23th.HomeWork
 
 import android.app.Activity
 import android.content.Intent
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_sign_up.*
-import org.jetbrains.anko.toast
+import woo.sopt23.seminar2_23th.R
 
 class SignUpActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
