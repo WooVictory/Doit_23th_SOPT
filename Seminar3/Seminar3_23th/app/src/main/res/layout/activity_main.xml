@@ -13,10 +13,16 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/main_tab"/>
 
+
+    <!--tabIndicatorColor을 통해서 tab에서 이동하는 바의 색상을 지정할 수 있음
+    그리고 tabIndicatoHeight=0을 하면 탭 이동할 때 움직이는 bar를 없앨 수 있다.-->
     <android.support.design.widget.TabLayout
             android:layout_alignParentBottom="true"
             android:id="@+id/main_tab"
+            android:elevation="5dp"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"/>
+            android:background="#FFFFFF"
+            app:tabIndicatorColor="#40D39F"
+            android:layout_height="56dp"/>
 
 </RelativeLayout>

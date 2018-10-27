@@ -17,15 +17,17 @@ class FragmentStatePagerAdapter(fm: FragmentManager, var fragmentCount: Int) : F
     override fun getItem(position: Int): Fragment? {
         when (position) {
             0 -> return MainFragment()
-            1 -> return MapFragment()
+            1 -> {
+                val mapFragment = MapFragment()
+                return mapFragment
+            }
             2 -> return MypageFragment()
             else -> return null
 
         }
     }
 
-    override fun getCount(): Int {
-        return fragmentCount
 
-    }
+    override fun getCount(): Int = fragmentCount
+
 }

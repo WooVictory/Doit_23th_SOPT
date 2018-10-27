@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btn_rv_item_kakao_talk_room"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <ImageView
+            android:id="@+id/iv_rv_item_kakao_talk_room_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_toRightOf="@+id/iv_rv_item_kakao_talk_room_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_rv_item_kakao_talk_room_title"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:text="[DoIT_SOPT]안드로이드 파트"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/tv_rv_item_kakao_talk_room_person_cnt"
+                        android:text="53"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_rv_item_kakao_talk_room_content"
+                    android:text="하자~~!!"
+                    android:textSize="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/tv_rv_item_kakao_talk_room_time"
+            android:text="어제"
+            android:layout_marginRight="16dp"
+            android:textSize="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"/>
+</RelativeLayout>
