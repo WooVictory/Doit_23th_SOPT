@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_rv_item_memo_whole_box"
+        android:background="?android:selectableItemBackground"
+        android:layout_height="72dp">
+
+    <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목 : "/>
+
+            <TextView
+                    android:id="@+id/title_memo_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="하루 일정 정리 "/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내용 : "/>
+
+            <TextView
+                    android:id="@+id/content_memo_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="하루 일정 정리 "/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

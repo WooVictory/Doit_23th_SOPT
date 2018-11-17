@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <!--FIXME
+    programming 적으로 하는 것 아니면 id 주지 말고
+    크기는 애니메이션의 크기만큼으로 하기 위해서 wrap_content를 준다.
+    파일명은 자기가 다운 받은 파일을 넣는다.
+    loop = 무한 반복으로 할 것인지 여부를 묻는다
+    auto_play = 붙이면 바로 뜰 것인지에 대한 여부.
+    -->
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main_activity"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/transfer"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
