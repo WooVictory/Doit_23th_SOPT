@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--한가지 속성만 쓰면 set을 안 쓰고 translate를 쓰면 되는데,
+    애니메이션을 사용할 때, 투명도를 주고 이동할 수도 있기 때문에
+    set이라는 속성을 묶어준다.
+    translate:이동
+    scale :  확대/축소
+    rotate : 회전
+
+    -->
+    <translate
+            android:duration="500"
+            android:fromXDelta="0%p"
+            android:fromYDelta="100%p"
+            android:interpolator="@android:anim/accelerate_interpolator"
+            android:toXDelta="0%p"
+            android:toYDelta="0%p"/>
+
+
+</set>
