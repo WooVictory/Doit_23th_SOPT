@@ -14,3 +14,14 @@
 * 2차 세미나
     * Activity / Fragment에 대해서
     * 4대 컴포넌트와 Intent
+    
+* 3차 세미나
+    * FragmentStatePagerAdapter란?
+    * RecyclerView란?
+    
+* 4차 세미나
+    * 내부 데이터베이스
+    * SharedPreference
+    * Recyclerview에 대해 더 알아보기
+
+
