@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_board_act_board_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:elevation="8dp">
+        <TextView
+                android:id="@+id/btn_board_act_write_board"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="?android:selectableItemBackground"
+                android:text="게시물 작성"/>
+    </RelativeLayout>
+
+</RelativeLayout>

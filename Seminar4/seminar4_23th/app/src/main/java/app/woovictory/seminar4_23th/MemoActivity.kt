@@ -25,8 +25,9 @@ class MemoActivity : AppCompatActivity(),View.OnClickListener {
                     val title : String = et_memo_act_title.text.toString()
                     val content : String = et_memo_act_content.text.toString()
 
-                    memoAdapter.items.add(MemoData(title, content))
-                    memoAdapter.notifyItemInserted(position)
+                    memoAdapter.addNewItem(MemoData(title,content))
+                    //memoAdapter.items.add(MemoData(title, content))
+                    //memoAdapter.notifyItemInserted(position)
                 }
             }
         }

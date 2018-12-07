@@ -39,6 +39,8 @@ class MainFragment : Fragment(), View.OnClickListener {
         return view
     }
 
+    // onActivityCreated에서 처리하면
+    // view를 참조하지 않아도 되는 듯 싶다.
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setting()

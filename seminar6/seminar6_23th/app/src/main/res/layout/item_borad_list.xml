@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/btn_rv_item_kakao_talk_room"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_rv_item_board_image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_toRightOf="@+id/iv_rv_item_board_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_rv_item_board_title"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:text="제목"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                <TextView
+                        android:id="@+id/tv_rv_item_board_like_cnt"
+                        android:text="53"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_rv_item_board_date"
+                    android:text="시간"
+                    android:textSize="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/tv_rv_item_board_like"
+            android:text="하트"
+            android:layout_marginRight="16dp"
+            android:textSize="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -3,8 +3,10 @@ package app.woovictory.seminar5_23th
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.RelativeLayout
 import kotlinx.android.synthetic.main.activity_sub.*
 import org.jetbrains.anko.toast
 
@@ -54,14 +56,30 @@ class SubActivity : AppCompatActivity() {
         })
 
         btn_sub_act_show_bottom_bar.setOnClickListener {
-            rl_sub_act_bottom_bar.visibility = View.VISIBLE
-            rl_sub_act_bottom_bar.startAnimation(bottomBarAnimation)
+
+            var layout : RelativeLayout = findViewById(R.id.rl_sub_act_bottom_bar)
+            var layoutParams = layout.layoutParams
+            layoutParams.height = WindowManager.LayoutParams.MATCH_PARENT
+            //layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT
+            layout.layoutParams = layoutParams
+            layout.startAnimation(bottomBarAnimation)
         }
 
         down_btn.setOnClickListener{
-            rl_sub_act_bottom_bar.visibility = View.GONE
-            rl_sub_act_bottom_bar.startAnimation(bottomBarAnimation2)
+            var layout : RelativeLayout = findViewById(R.id.rl_sub_act_bottom_bar)
+            var layoutParams = layout.layoutParams
+            layoutParams.height = WindowManager.LayoutParams.MATCH_PARENT-100
+            //layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT
+            layout.layoutParams = layoutParams
+            layout.startAnimation(bottomBarAnimation2)
         }
+
+        rl_sub_act_bottom_bar.setOnClickListener{
+            rl_sub_act_bottom_bar.visibility = View.GONE
+            show_layout.visibility = View.VISIBLE
+            show_layout.startAnimation(bottomBarAnimation)
+        }
+
 
 
 
