@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import app.woovictory.seminar6_23th.MainActivity
 import app.woovictory.seminar6_23th.R
 import app.woovictory.seminar6_23th.SharedPreferenceController
 import app.woovictory.seminar6_23th.model.post.PostLoginResponse
@@ -41,9 +42,14 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         init()
+
+        if(SharedPreferenceController.getAuthorization(this).isNotEmpty())
+            startActivity<BoardActivity>()
+
     }
 
     fun postLogin() {
+        Log.v("454 woo c","clcik")
         var jsonObject = JSONObject()
         jsonObject.put("email",et_main_act_email.text.toString())
         jsonObject.put("password",et_main_act_pw.text.toString())
@@ -56,12 +62,16 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             override fun onResponse(call: Call<PostLoginResponse>, response: Response<PostLoginResponse>) {
+                Log.v("454 woo r",response.body()!!.message)
                 if(response.isSuccessful){
                     toast(response.body()!!.message)
                     SharedPreferenceController.setAuthorization(this@LoginActivity, response.body()!!.data.token)
                     startActivity<BoardActivity>()
                     finish()
                     Log.v("454 woo s",response.body()!!.message)
+                }else
+                {
+                    Log.v("454 woo else",response.body()!!.message)
                 }
             }
         })

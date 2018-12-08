@@ -1,5 +1,7 @@
 package app.woovictory.seminar6_23th.view
 
+import android.app.Activity
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -8,7 +10,7 @@ import android.view.View
 import app.woovictory.seminar6_23th.R
 import app.woovictory.seminar6_23th.adapter.BoardRecyclerViewAdapter
 import app.woovictory.seminar6_23th.model.get.BoardData
-import app.woovictory.seminar6_23th.model.get.GetBoradList
+import app.woovictory.seminar6_23th.model.get.GetBoardList
 import app.woovictory.seminar6_23th.network.ApplicationController
 import app.woovictory.seminar6_23th.network.NetworkService
 import kotlinx.android.synthetic.main.activity_board.*
@@ -46,13 +48,13 @@ class BoardActivity : AppCompatActivity() {
     }
 
     private fun getBoardListResponse(){
-        val getBoardListResponse = networkService.getBoardListResponse("application/json", 0, 30)
-        getBoardListResponse.enqueue(object : Callback<GetBoradList> {
-            override fun onFailure(call: Call<GetBoradList>, t: Throwable) {
+        val getBoardListResponse = networkService.getBoard("application/json", 0, 30)
+        getBoardListResponse.enqueue(object : Callback<GetBoardList> {
+            override fun onFailure(call: Call<GetBoardList>, t: Throwable) {
                 Log.e("board list fail", t.toString())
             }
 
-            override fun onResponse(call: Call<GetBoradList>, response: Response<GetBoradList>) {
+            override fun onResponse(call: Call<GetBoardList>, response: Response<GetBoardList>) {
                 if (response.isSuccessful){
                     val temp : ArrayList<BoardData> = response.body()!!.data
                     if (temp.size > 0){

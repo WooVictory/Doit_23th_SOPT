@@ -3,7 +3,7 @@ package app.woovictory.seminar6_23th.model.get
 /**
  * Created by VictoryWoo
  */
-data class GetBoradList(
+data class GetBoardList(
     var status: String,
     var message: String,
     var data: ArrayList<BoardData>

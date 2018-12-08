@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             lottie_main_activity.playAnimation()
         }
 
+
         lottie_main_activity.addAnimatorListener(object : Animator.AnimatorListener{
             override fun onAnimationRepeat(p0: Animator?) {
             }

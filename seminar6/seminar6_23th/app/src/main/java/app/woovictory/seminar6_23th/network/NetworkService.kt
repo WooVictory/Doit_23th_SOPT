@@ -1,6 +1,7 @@
 package app.woovictory.seminar6_23th.network
 
 import app.woovictory.seminar6_23th.BaseModel
+import app.woovictory.seminar6_23th.model.get.GetBoardList
 import app.woovictory.seminar6_23th.model.post.PostBoardWriteResponse
 import app.woovictory.seminar6_23th.model.post.PostLoginResponse
 import app.woovictory.seminar6_23th.model.post.PostSignUp
@@ -50,5 +51,10 @@ interface NetworkService {
         @Part photo: MultipartBody.Part?
     ): Call<PostBoardWriteResponse>
 
-    @GET("/board")
+    @GET("/contents")
+    fun getBoard(
+        @Header("Content-Type") content_type: String,
+        @Query("offset") offset : Int,
+        @Query("limit") limit : Int
+    ) : Call<GetBoardList>
 }
