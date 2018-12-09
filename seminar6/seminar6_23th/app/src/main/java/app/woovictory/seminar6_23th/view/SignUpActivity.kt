@@ -55,7 +55,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
         user = PostSignUp(et_sign_up_act_name.text.toString(), et_sign_up_act_email.text.toString()
             ,et_sign_up_act_pw.text.toString(),et_sign_up_act_part.text.toString())
 
-        var signUpResponse = networkService.postSignUp("application/json", gsonObject)
+        var signUpResponse = networkService.postSignUp("application/json", user)
         Log.v("332 woo c:","click")
         signUpResponse.enqueue(object : Callback<PostSignUpResponse>{
             override fun onFailure(call: Call<PostSignUpResponse>, t: Throwable) {

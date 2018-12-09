@@ -24,10 +24,10 @@ interface NetworkService {
     * 받지 않으면 된다.
     * */
     //@Headers("Content-type: application/json")
-    @POST("/users")
+    @POST("users")
     fun postSignUp(
         @Header("Content-Type") content_type: String,
-        @Body() body: JsonObject
+        @Body user: PostSignUp
     ): Call<PostSignUpResponse>
 
     @POST("/login")
